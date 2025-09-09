@@ -1,5 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite both the original source and this adaptation."
+Description:
+This software is an adaptation of the Graphical Ego-Network Tool for Longitudinal Examination (Krause & Jeronimus, 2019), modified for use in my study (Kalyn Bogard, Lloyd, Petluk & Barrett 2025, in review at Quantitative Science Studies). It is released under the MIT License.
+
+License:
+This software is licensed under the MIT License. See the LICENSE file for full details.
+
+Citation:
+If you use this software, please cite both the original authors and this adaptation:
 
 original authors: Krause, F., & Jeronimus, B. (2019). Graphical Ego-Network Tool for Longitudinal Examination. www.GENTLE.eu. University of Groningen, the Netherlands. DOI:10.5281/zenodo.3604009.
 
