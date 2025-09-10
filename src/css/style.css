@@ -1,0 +1,429 @@
+input,
+select:focus,
+textarea {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white !important;
+}
+
+a:hover {
+  color: rgb(253, 228, 181) !important;
+}
+
+#confirm_next:hover {
+  border: 1px solid white !important;
+}
+
+#confirm:hover {
+  border: 1px solid white !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: 'white';
+  margin: 0;
+}
+
+.introduction {
+  color: #212529;
+}
+
+.introduction p {
+  color: #212529;
+}
+
+.node {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.hiddenNode {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.nav-link.unavailable {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min-content;
+}
+
+.legend .legendNode {
+  display: flex;
+  background-color: rgb(172, 172, 172);
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  stroke-width: 10;
+  font-family: 'Roboto', sans-serif;
+  /* padding: 15px; */
+  margin: 15px;
+  align-items: center;
+}
+
+.legend .legendNode p {
+  margin: auto;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+.categoryButton,
+#confirm,
+.ID_Confirm,
+#confirm_next {
+  width: 49%;
+  margin-top: 0.25rem;
+  text-align: center;
+  padding: 0.375rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1rem;
+}
+
+.link {
+  stroke: #999;
+  stroke-width: 1.5px;
+}
+
+.link.highlighted {
+  stroke: #999;
+  stroke-width: 1.5px;
+}
+
+#shadow {
+  box-shadow: 0 0 6px #acacac;
+}
+
+.container {
+  position: relative;
+  background-color: 'white';
+  width: 100%;
+  height: 45vh;
+  min-height: calc(30px * 7);
+  max-width: 100vw;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+svg {
+  overflow: visible !important;
+}
+
+.withBoxes {
+  height: 63vh !important;
+}
+
+.popupDialog {
+  position: absolute;
+  display: block;
+  width: 50vw;
+  height: max-content;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: #343a40;
+  border: 1px solid #acacac;
+  border-radius: 0.25rem;
+  padding: 15px;
+  text-align: center;
+}
+
+.popupDialog input {
+  margin: 15px;
+  padding: 3px;
+}
+
+.modifyButton {
+  box-shadow: 0 0 6px #acacac;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: white;
+  width: max-content;
+  border-radius: 5px;
+  margin: 25px 15px 25px 0px;
+  float: left;
+  padding: 5px 15px 5px 15px;
+}
+
+.popupDialog .choiceBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.popupDialog h2 {
+  text-align: center;
+  color: white;
+}
+
+.popupDialog.hidden {
+  display: none;
+}
+#boxes {
+  display: block;
+  height: 100vh;
+}
+
+.float_text.multi {
+  font-size: 10px;
+}
+#usr {
+  box-shadow: 0 0 6px #acacac;
+  width: 72%;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #acacac;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin-left: 0.25rem;
+}
+
+.usrInput {
+  height: max-content;
+  padding: 50px 50px 50px 50px;
+}
+
+/* Only overwrite links inside of userInput */
+.usrInput > a {
+  max-width: 26.5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#content {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+#confirm {
+  box-shadow: 0 0 6px #acacac;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: white;
+  width: 26.5%;
+}
+
+#confirm_next {
+  display: block;
+  /* margin-top: 1.5rem; */
+  box-shadow: 0 0 6px #acacac;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: white;
+  /* width: 26.5%; */ /* NOTE if you are looking for why this is moved, look at .usrInput > a*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#confirm:hover {
+  cursor: pointer;
+}
+
+#userInputStd {
+  /* margin-bottom: 2.5rem; */
+  height: max-content;
+  padding: 50px 50px 0px 50px;
+}
+
+.textBox {
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  word-wrap: break-word;
+  background-color: #343a40;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.25;
+  font-size: 1.3rem;
+  box-shadow: 0 0 6px #acacac;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textBox div {
+  height: max-content;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 72%;
+  height: 0.75rem;
+  border: 1px solid #030202;
+  border-radius: 5px;
+  background: white;
+  outline: none;
+  margin-bottom: 0.1rem;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background: #cc2234;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background: #cc2234;
+  cursor: pointer;
+}
+
+.sliderValue {
+  display: block;
+  width: 4.5rem;
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 0.375rem;
+  background-color: white;
+  border: 3px solid #cc2234;
+  border-radius: 15%;
+  margin: 0.5rem auto 1rem auto;
+}
+
+.loginForm {
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+  background: #343a40;
+  text-align: center;
+  border: 1px solid #343a40;
+  border-radius: 0.55rem;
+  margin-top: 50px;
+}
+
+.loginForm h1,
+p {
+  color: white;
+}
+
+.loginForm a {
+  text-decoration: underline;
+}
+
+/* .loginForm p{
+  color:
+} */
+.loginForm label {
+  color: white;
+  /* margin: 15px auto; */
+  width: 90%;
+}
+.loginInput {
+  display: block;
+  width: 90%;
+  margin: 15px auto;
+  padding: 5px;
+  border: 1px solid #acacac;
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 601px) {
+  .node_text {
+    font-size: 100%;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .node_text {
+    font-size: 70%;
+    font-weight: 800;
+  }
+  .categoryButton {
+    width: 100%;
+  }
+  #confirm {
+    width: 100%;
+  }
+  #usr {
+    width: 100%;
+  }
+  .slider {
+    width: 100%;
+  }
+
+  .loginForm {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+
+#linkdisplaybox{
+  display:inline-flex;
+  margin-top: 5px;
+}
+
+#linknumber{
+  color:#030202
+}
+.ConsentPopup label{
+  color:#030202 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.ConsentPopup p{
+  color:#030202;
+  /* position: absolute;  */
+  padding-left: 20%;
+  padding-right: 20%;
+  top: 0;
+  bottom: 0; 
+  /* left: 15%; 
+  right: 15%; */
+   width: 100%; 
+   height: 100%; 
+}
+.ConsentPopup a {
+  color:#0c00ad !important;
+}
+
+.ulethLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ConsentPopup button{
+  width: 26.5% !important;
+}
