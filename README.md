@@ -29,13 +29,13 @@ How to run the build version of Gentle.
 1. Start by cloning the project to your local machine by running the git clone command
 
 	```
- 	git clone https://github.com/CalvinLloyd117/GentleSurvey.git
+ 	git clone https://github.com/hkalyn/GENTLE-Adapted.git
 	```
 	
 2. Navigate to the parent directory of the project in your terminal using
 	
 	```
-	cd path/to/GentleSurvey
+	cd path/to/GENTLE-Adapted
 	```
 	
 	Note: The above path is just a placeholder. You will have to navigate to the project directory unique to your computer.
